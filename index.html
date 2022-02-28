@@ -19,7 +19,7 @@
                                         Actuarial consulting." />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/min.css">
 	</head>
 	<body>
         <div class="outer-container">
@@ -88,7 +88,6 @@
                             </div>
                             <div class="profile-photo"> 
                             	<img src="img/dan.jpg" alt="Daniel Mussett" width=300px/>
-                            	<span><i>Daniel featured on the Quartz Wealth website in 2021</i></span>
                             </div>
                         </div>
                         <div><br/>A specialist investment actuary, Daniel is well-versed in the theory and practice of asset-liability management for institutional investors.<br/>
@@ -129,8 +128,10 @@
                         <br/>
 
                         <div class="social-media">
-                            <a href="https://nz.linkedin.com/pub/daniel-mussett/25/2a6/475" target="_blank"><img src="img/linkedin_icon.svg" width=72px></a>
-                            <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#100;&#097;&#110;&#105;&#101;&#108;&#064;&#097;&#108;&#115;&#097;&#046;&#110;&#122;" class="space-icon" target="_blank"><img src="img/email.svg" width=72px></a>
+                            <a href="https://nz.linkedin.com/pub/daniel-mussett/25/2a6/475" target="_blank"><img src="img/linkedin.svg" width=72px></a>
+                            <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#100;&#097;&#110;&#105;&#101;&#108;&#064;&#097;&#108;&#115;&#097;&#046;&#110;&#122;" class="space-icon" target="_blank">
+                                <img src="img/email.svg" width=72px>
+                            </a>
                         </div>
 
                     </div> <!-- end content-contact -->
@@ -141,51 +142,8 @@
             </div>
         </div>  <!-- end outer-container -->
 
-        <script type='text/javascript'>
-			document.addEventListener('DOMContentLoaded', (e) => {
-				show_overview();
-				
-				document.getElementById("overview-menu-item").onclick = show_overview;
-				document.getElementById("about-menu-item").onclick = show_about;
-				document.getElementById("contact-menu-item").onclick = show_contact;
-				
-				function show_overview() {
-					set_overview_visibility(true);
-					set_about_visibility(false);
-					set_contact_visibility(false);
-					scroll_top();
-				}
-				
-				function show_about() {
-					set_overview_visibility(false);
-					set_about_visibility(true);
-					set_contact_visibility(false);
-					scroll_top();
-				}
-				
-				function show_contact() {
-					set_overview_visibility(false);
-					set_about_visibility(false);
-					set_contact_visibility(true);
-					scroll_top();
-				}
-				
-				function set_overview_visibility(isVisible) {
-				  document.getElementById("overview").style.display = isVisible ? "block" : "none";
-				}
-				
-				function set_about_visibility(isVisible) {
-				  document.getElementById("about").style.display = isVisible ? "block" : "none";
-				}
-				
-				function set_contact_visibility(isVisible) {
-				  document.getElementById("contact").style.display = isVisible ? "block" : "none";
-				}
-				
-				function scroll_top() {
-					window.scrollTo({ top: 0, behavior: 'smooth' });
-				}
-			});
+        <script src="js/min.js"></script>
+			
 		</script>
     </body>
 </html>

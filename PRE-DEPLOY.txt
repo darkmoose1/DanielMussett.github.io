@@ -1,0 +1,10 @@
+1. Minify CSS : https://www.toptal.com/developers/cssminifier/
+wget --post-data="input=`cat css/main.css`" --output-document=css/min.css https://www.toptal.com/developers/cssminifier/raw
+
+2. Minify JS  : https://www.toptal.com/developers/javascript-minifier/
+wget --post-data="input=`cat js/main.js`" --output-document=js/min.js https://www.toptal.com/developers/javascript-minifier/raw
+
+3. Update refs in html to use min.css and min.js instead of main.css and main.js
+
+4. Minify HTML :
+curl -X POST -s --data-urlencode 'indexMain.html' https://www.toptal.com/developers/html-minifier/raw > index.html
